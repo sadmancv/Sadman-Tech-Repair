@@ -1,0 +1,143 @@
+<!--
+Name: Mohammad Sadman
+Course: CS 310 Introduction to Web Development
+Assignment: Lab 2
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Book Appointment
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="logo">
+    S
+   </div>
+   <div>
+    <h1>
+     Book an Appointment
+    </h1>
+    <p>
+     Premium device repair with fast, friendly service.
+    </p>
+   </div>
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services & Prices</a>
+    <a href="hours.html">Hours</a>
+    <a href="appointment.html">Appointment</a>
+    <a href="contact.html">Contact & Map</a>
+    <a href="customer.html">Customer Form</a>
+</nav>
+  </header>
+  <main>
+   <section class="appointment glass">
+    <div>
+     <p class="eyebrow">
+      Schedule service
+     </p>
+     <h2>
+      Reserve a repair time
+     </h2>
+     <p>
+      Customers can use this page to request an appointment. This form is for the class website design, so it does not actually send information unless connected to a server later.
+     </p>
+     <ul>
+      <li>
+       Choose device type
+      </li>
+      <li>
+       Select service needed
+      </li>
+      <li>
+       Pick a date and time
+      </li>
+      <li>
+       Add a short problem description
+      </li>
+     </ul>
+    </div>
+    <form class="appt-form">
+     <label>
+      Full Name
+      <input placeholder="Enter your name" type="text"/>
+     </label>
+     <label>
+      Email Address
+      <input placeholder="example@email.com" type="email"/>
+     </label>
+     <label>
+      Phone Number
+      <input placeholder="(555) 123-4567" type="tel"/>
+     </label>
+     <label>
+      Device Type
+      <select>
+       <option>
+        iPhone / Smartphone
+       </option>
+       <option>
+        MacBook / Laptop
+       </option>
+       <option>
+        Tablet
+       </option>
+       <option>
+        Smart Watch
+       </option>
+       <option>
+        Other Device
+       </option>
+      </select>
+     </label>
+     <label>
+      Service Needed
+      <select>
+       <option>
+        Screen Repair
+       </option>
+       <option>
+        Battery Replacement
+       </option>
+       <option>
+        Virus Removal
+       </option>
+       <option>
+        Data Backup
+       </option>
+       <option>
+        General Diagnostic
+       </option>
+      </select>
+     </label>
+     <div class="two">
+      <label>
+       Date
+       <input type="date"/>
+      </label>
+      <label>
+       Time
+       <input type="time"/>
+      </label>
+     </div>
+     <label>
+      Problem Description
+      <textarea placeholder="Briefly describe the issue"></textarea>
+     </label>
+     <button type="submit">
+      Request Appointment
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer>
+    © 2026 Sadman Tech Repair<br>
+    <small>Created by Mohammad Sadman</small>
+</footer>
+ </body>
+</html>

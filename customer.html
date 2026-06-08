@@ -1,0 +1,133 @@
+<!--
+Name: Mohammad Sadman
+Course: CS 310 Introduction to Web Development
+Assignment: Lab 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">S</div>
+        <div>
+            <h1>Customer Information</h1>
+            <p>Customer intake form for Sadman Tech Repair.</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Prices</a>
+            <a href="hours.html">Hours</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="contact.html">Contact & Map</a>
+            <a href="customer.html">Customer Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h2>Customer Intake Form</h2>
+            <p>This form collects customer data for registration, repairs, surveys, and suggestions.</p>
+        </section>
+
+        <section class="customer-form-section glass">
+            <form class="customer-form">
+
+                <fieldset>
+                    <legend>Create Customer Account</legend>
+
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Device and Repair Information</legend>
+
+                    <label for="device">Device Type</label>
+                    <input list="deviceOptions" id="device" name="device" placeholder="Choose or type device type">
+                    <datalist id="deviceOptions">
+                        <option value="iPhone">
+                        <option value="Samsung Phone">
+                        <option value="Laptop">
+                        <option value="Tablet">
+                        <option value="Gaming Console">
+                        <option value="Smart Watch">
+                    </datalist>
+
+                    <label for="service">Service Needed</label>
+                    <input list="serviceOptions" id="service" name="service" placeholder="Choose or type service">
+                    <datalist id="serviceOptions">
+                        <option value="Screen Repair">
+                        <option value="Battery Replacement">
+                        <option value="Virus Removal">
+                        <option value="Data Backup">
+                        <option value="Keyboard Replacement">
+                        <option value="General Diagnostic">
+                    </datalist>
+
+                    <label for="urgency">Repair Priority</label>
+                    <select id="urgency" name="urgency">
+                        <option>Standard Service</option>
+                        <option>Same-Day Service</option>
+                        <option>Emergency Service</option>
+                    </select>
+
+                    <label for="issue">Describe the Issue</label>
+                    <textarea id="issue" name="issue" placeholder="Explain what is wrong with the device"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Survey and Suggestions</legend>
+
+                    <label for="source">How did you hear about us?</label>
+                    <input list="sourceOptions" id="source" name="source" placeholder="Choose or type an answer">
+                    <datalist id="sourceOptions">
+                        <option value="Google Search">
+                        <option value="Friend or Family">
+                        <option value="Social Media">
+                        <option value="Walk-in">
+                        <option value="School">
+                    </datalist>
+
+                    <label for="rating">Customer Interest Level</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10">
+
+                    <label for="suggestion">Suggestions</label>
+                    <textarea id="suggestion" name="suggestion" placeholder="Write any suggestions or comments"></textarea>
+
+                    <label class="check-row">
+                        <input type="checkbox" name="updates">
+                        I would like to receive repair updates by email.
+                    </label>
+                </fieldset>
+
+                <button type="submit">Submit Customer Information</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Sadman Tech Repair<br>
+        <small>Created by Mohammad Sadman</small>
+    </footer>
+
+</body>
+</html>
